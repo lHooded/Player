@@ -1960,7 +1960,7 @@ public class PlayerActivity extends Activity {
                 subtitleView.setApplyEmbeddedStyles(true);
             }
 
-            subtitleView.setBottomPaddingFraction(SubtitleView.DEFAULT_BOTTOM_PADDING_FRACTION * 2f / 3f);
+            subtitleView.setBottomPaddingFraction(SubtitleView.DEFAULT_BOTTOM_PADDING_FRACTION * 0f);
         }
         setSubtitleTextSize();
     }
