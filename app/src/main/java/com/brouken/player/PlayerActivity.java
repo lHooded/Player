@@ -1937,7 +1937,7 @@ public class PlayerActivity extends Activity {
         final CaptioningManager captioningManager = (CaptioningManager) getSystemService(Context.CAPTIONING_SERVICE);
         final SubtitleView subtitleView = playerView.getSubtitleView();
         final boolean isTablet = Utils.isTablet(context);
-        subtitlesScale = SubtitleUtils.normalizeFontScale(captioningManager.getFontScale(), isTvBox || isTablet);
+        subtitlesScale = SubtitleUtils.normalizeFontScale(captioningManager.getFontScale(), isTvBox || isTablet) / 3;
         if (subtitleView != null) {
             final CaptioningManager.CaptionStyle userStyle = captioningManager.getUserStyle();
             final CaptionStyleCompat userStyleCompat = CaptionStyleCompat.createFromCaptionStyle(userStyle);
